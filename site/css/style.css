@@ -1,0 +1,84 @@
+*{
+	font-family: 'Trebuchet MS', sans-serif;
+	box-sizing: border-box;
+}
+body{
+	margin: 10px;
+}
+h1{
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 1.75em;
+}
+#h1{
+	background-color: #ff9999;
+}
+#h2{
+	background-color: #e60000;
+}
+#h3{
+	background-color: #ffff66;
+}
+.heading{
+	font-size: 1.25em;
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border: 1px solid black;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 120px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.content{
+	background-color: #686868;
+	margin: 5px;
+	padding: 40px 10px 30px 10px;
+	position: relative;
+	clear: both;
+	border: 1px solid black;
+}
+.content > .heading{
+	font-size: 1.25em;
+}
+@media (min-width: 992px){
+	div .row1,.row2,.row3{
+		width: 33.33%;
+		float: left;
+		box-sizing: border-box;
+		padding: 5px;
+		font-size: 14px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	div .row1,.row2{
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		padding: 5px;
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+	div > .row3{
+		width: 100%;
+		float: left;
+		box-sizing: border-box;
+		padding: 5px;
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+}
+@media (max-width: 767px){
+	div .row1,.row2,.row3{
+		width: 100%;
+		float: left;
+		box-sizing: border-box;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		font-size: 14px;
+	}
+}
